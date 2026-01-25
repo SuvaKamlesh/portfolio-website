@@ -1,0 +1,332 @@
+/*make mobile responsive*/
+
+@media(max-width:900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-img {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: white;
+
+}
+
+.hero {
+  font-size: 3rem;
+  padding-top: 160px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*.hero span{
+  color: #6c63ff;
+
+}*/
+
+.hero h2 {
+  margin: 10px 0;
+  color: #aaa;
+
+}
+
+.hero p {
+  max-width: 5000px;
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #6c63ff, #9b5cff);
+  color: white;
+  cursor: pointer;
+
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0f;
+
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+
+}
+
+.about {
+  padding: 100px 10%;
+  background: #0a0a0f;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-text {
+  width: 55%;
+
+}
+
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #7c7cff;
+}
+
+.about-text p {
+  line-height: 1.8;
+  color: #bbb;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.about-img {
+  width: 35%;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #7c7cff;
+}
+
+.about-img img:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #7c7cff;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+
+}
+
+.btn:hover {
+  background: #5f5fff;
+}
+
+
+/*Skills - Section*/
+
+.skills {
+  padding: 20px 10%;
+  background: #0b0b0b;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #222;
+  animation: fadeUp 0.6s ease forwards;
+
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: #7a6cff;
+  box-shadow: 0 0 20px #7a6cff;
+}
+
+.skill-card h3 {
+  color: #7a6cff;
+  margin-bottom: 10px;
+}
+
+
+/* Project - section*/
+
+
+.Project-title{
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+.projects {
+  padding: 80px 10%;
+}
+
+
+.project-grid {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #7a6cff;
+}
+
+.tech span {
+  background: #222;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.project-links a {
+  color: #7a6cff;
+  margin-right: 15px;
+  padding: 8px 14px;
+  border: 1px solid #7a6cff;
+  border-radius: 20px;
+  transition: .3s;
+
+}
+
+.project-links a:hover {
+  background: #7a6cff;
+  color: black;
+}
+
+
+
+/*Contact-Section*/
+
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #aaa;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #111;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 10px;
+}
+
+.contact button {
+  background: #7a6cff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/* Make Website Responsive*/
+
+@media(max-width:768px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+/*Mobile responsie*/
+
+@media(max-width:768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

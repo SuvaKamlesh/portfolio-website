@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /*make mobile responsive*/
 
 @media(max-width:900px) {
@@ -329,4 +332,23 @@ button {
   .projects {
     grid-template-columns: 1fr;
   }
+}
+
+
+/*CV Button*/
+
+.cv-btn{
+  display: inline-block;
+  margin: 20px;
+  padding: 12px 24px;
+  background: #7c7cff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.cv-btn:hover{
+  background: #5a5aff;
+  transform: translateY(-2px);
 }
